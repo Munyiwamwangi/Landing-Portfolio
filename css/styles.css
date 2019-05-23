@@ -1,0 +1,12 @@
+nav li a {
+  text-decoration: none;
+  padding:10px;
+}
+nav {
+  text-align: center;
+  background-color: inherit;
+}
+nav li {
+  display: inline;
+  color:inherit;
+}
