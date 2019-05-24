@@ -21,7 +21,7 @@ h1, h2 {
   color:white;
   }
   a:hover {
-    color: white;
+    color: green;
   }
 .main {
   padding-top: 4%;
@@ -64,7 +64,7 @@ a {
   border: 3px solid #ccc;
   float: left;
   margin: 5px;
-  padding: 20px;
+  padding: 5%;
 }
 div.two {
   taxt-align: center;
@@ -72,4 +72,24 @@ div.two {
 .image3 {
   padding: 5%;
   align:center;
+}
+.image3>p {
+  text-align: center;
+}
+.image4 {
+  margin-left: 35%;
+  }
+.image5 {
+  margin-top: 5%;
+  margin-left: 45%;
+}
+.call {
+  float: right;
+  margin-bottom: 5%;
+}
+footer {
+  font-size: 15px;
+}
+.copy {
+  align:middle;
 }
