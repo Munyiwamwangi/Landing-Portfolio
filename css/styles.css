@@ -39,3 +39,11 @@ header {
 .image2 {
   border-radius: 50%;
 }
+.column {
+  float: left;
+  width: auto;
+}
+.colm:after {
+  display: table;
+  clear: both;
+}
