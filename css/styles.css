@@ -38,10 +38,11 @@ header {
 }
 .image2 {
   border-radius: 50%;
+  float: left;
 }
 .column {
   float: left;
-  width: auto;
+  width: 50%;
 }
 .colm:after {
   display: table;
