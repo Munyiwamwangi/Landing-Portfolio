@@ -9,6 +9,7 @@ nav {
   background-color: inherit;
   margin-top: 0%;
   margin-bottom: 10%;
+  font-size: 19px;
 }
 nav li {
   display: inline;
@@ -42,7 +43,7 @@ header {
 }
 .column {
   float: left;
-  width: 50%;
+  width: 300px%;
 }
 .colm:after {
   display: table;
