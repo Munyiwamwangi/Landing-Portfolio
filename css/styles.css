@@ -1,25 +1,26 @@
 nav li a {
   text-decoration: none;
-  padding:10px;
-  color: green;
+  padding:20px;
+  color: lightgreen;
   text-size:23px;
 }
 nav {
   text-align: center;
   background-color: inherit;
-  margin-top: 7%;
+  margin-top: 0%;
+  margin-bottom: 10%;
 }
 nav li {
   display: inline;
-  color:inherit;
 }
 h1, h2 {
   text-align: center;
   text-emphasis-style: circle;
   color:white;
-}
+  }
 .main {
   padding-top: 4%;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("/home/moringaschool/Documents/moringa-school-projects/landing_portfolio/images/background-website-design-6.jpg");
@@ -28,4 +29,9 @@ header {
   width:100%;
   height: 80px;
   background-image:url(/home/moringaschool/Documents/moringa-school-projects/landing_portfolio/images/greencode.jpg);
+}
+.cent {
+  padding-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
 }
