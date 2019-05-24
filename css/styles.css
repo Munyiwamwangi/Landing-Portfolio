@@ -1,8 +1,8 @@
 nav li a {
-  text-decoration: none;
-  padding:20px;
+  padding:25px;
   color: lightgreen;
   text-size:23px;
+  text-decoration: none;
 }
 nav {
   text-align: center;
@@ -10,6 +10,7 @@ nav {
   margin-top: 0%;
   margin-bottom: 10%;
   font-size: 19px;
+  text-decoration: none;
 }
 nav li {
   display: inline;
@@ -20,7 +21,7 @@ h1, h2 {
   color:white;
   }
   a:hover {
-    color: lightgrey;
+    color: white;
   }
 .main {
   padding-top: 4%;
@@ -55,4 +56,7 @@ background-color: #ccc;
   flex: 33%;
   border: 5px solid lightgrey;
   padding: 10px;
+}
+a {
+  text-decoration: none;
 }
