@@ -60,12 +60,16 @@ background-color: #ccc;
 a {
   text-decoration: none;
 }
-gallery {
+.gallery {
   border: 3px solid #ccc;
   float: left;
   margin: 5px;
+  padding: 20px;
 }
-.two {
-  padding: 10px;
+div.two {
   taxt-align: center;
+}
+.image3 {
+  padding: 5%;
+  align:center;
 }
