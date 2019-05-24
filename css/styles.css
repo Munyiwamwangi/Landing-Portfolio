@@ -1,9 +1,10 @@
 nav li a {
-  padding:25px;
+  padding: 25px;
   color: lightgreen;
-  text-size:23px;
+  text-size: 23px;
   text-decoration: none;
 }
+
 nav {
   text-align: center;
   background-color: inherit;
@@ -12,17 +13,21 @@ nav {
   font-size: 19px;
   text-decoration: none;
 }
+
 nav li {
   display: inline;
 }
+
 h1, h2 {
   text-align: center;
   text-emphasis-style: circle;
-  color:white;
-  }
-  a:hover {
-    color: green;
-  }
+  color: white;
+}
+
+a:hover {
+  color: green;
+}
+
 .main {
   padding-top: 4%;
   height: 500px;
@@ -30,66 +35,81 @@ h1, h2 {
   background-size: cover;
   background-image: url("/home/moringaschool/Documents/moringa-school-projects/landing_portfolio/images/background-website-design-6.jpg");
 }
+
 header {
-  width:100%;
+  width: 100%;
   height: 80px;
-  background-image:url(/home/moringaschool/Documents/moringa-school-projects/landing_portfolio/images/greencode.jpg);
+  background-image: url(/home/moringaschool/Documents/moringa-school-projects/landing_portfolio/images/greencode.jpg);
 }
+
 .cent {
   padding-top: 7%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .image2 {
   border-radius: 50%;
 }
+
 .cola {
-display: flex;
-box-sizing: border-box;
-padding: 10%;
-text-align: center;
-margin-top: -20px;
-background-color: #ccc;
+  display: flex;
+  box-sizing: border-box;
+  padding: 10%;
+  text-align: center;
+  margin-top: -20px;
+  background-color: #ccc;
 }
+
 .column {
   flex: 33%;
   border: 5px solid lightgrey;
   padding: 10px;
 }
+
 a {
   text-decoration: none;
 }
+
 .gallery {
   border: 3px solid #ccc;
   float: left;
   margin: 5px;
   padding: 5%;
 }
+
 div.two {
   taxt-align: center;
 }
+
 .image3 {
   padding: 5%;
-  align:center;
+  align: center;
 }
+
 .image3>p {
   text-align: center;
 }
+
 .image4 {
   margin-left: 35%;
-  }
+}
+
 .image5 {
   margin-top: 5%;
   margin-left: 45%;
 }
+
 .call {
   float: right;
   margin-bottom: 5%;
 }
+
 footer {
   font-size: 15px;
 }
+
 .copy {
-  align:middle;
+  align: middle;
 }
