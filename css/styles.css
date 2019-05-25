@@ -33,13 +33,13 @@ a:hover {
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://github.com/Munyiwamwangi/Landing-Portfolio/blob/master/images/background-website-design-6.jpg");
+  background-image: url("/home/moringaschool/Documents/moringa-school-projects/Landing_Portfolio/images/background-website-design-6.jpeg");
 }
 
 header {
   width: 100%;
   height: 80px;
-  background-image: url(https://github.com/Munyiwamwangi/Landing-Portfolio/blob/master/images/greencode.jpg);
+  background-image: url(/home/moringaschool/Documents/moringa-school-projects/Landing_Portfolio/images/greencode.jpg);
 }
 
 .cent {
