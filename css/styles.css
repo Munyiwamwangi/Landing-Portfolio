@@ -16,12 +16,14 @@ nav {
 
 nav li {
   display: inline;
+  font-family: 'Libre Baskerville', serif;
 }
 
 h1, h2 {
   text-align: center;
   text-emphasis-style: circle;
   color: white;
+  font-family: 'Libre Baskerville', serif;
 }
 
 a:hover {
