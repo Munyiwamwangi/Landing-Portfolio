@@ -12,7 +12,7 @@ One only needs to have a good editor installed in their computer.
 Get one from atom.io.
 Operating a Linux Operating system requires the DEB file while mac OS requires the other vesion. NB; there are only two files copies for the two classifications types of operating systems
 ###link to live site on GitHub Pages
- link;  https://munyiwamwangi.github.io/Landing-Portfolio/ 
+ link;  https://munyiwamwangi.github.io/Landing-Portfolio/
 ###copyright and license information
 MIT License
 
