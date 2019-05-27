@@ -13,8 +13,8 @@ This app is a description of services that I offer, the experience I have gather
 *Open index.html from a browser (preferably chrome)
 ###Technologies used
 I used HTML, CSS and a little bit of JavaScript
-###Known Buga
-No bugs. If any found, freely contact me at josseymunyi@gmail.com
+###Known Bugs
+No bugs known. If any found, freely contact me at josseymunyi@gmail.com
 ###Support and contact detals
 Tell +254 719828205
 email: josseymunyi@gmail.com
