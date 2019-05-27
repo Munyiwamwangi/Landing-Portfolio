@@ -8,9 +8,16 @@ Munyi Mwangi Wanjiku
 This app is a description of services that I offer, the experience I have gathered, qualifications and projects I have actively participated in, in my professional development
 
 ###project setup instructions
-One only needs to have a good editor installed in their computer.
-Get one from atom.io.
-Operating a Linux Operating system requires the DEB file while mac OS requires the other vesion. NB; there are only two files copies for the two classifications types of operating systems
+*git clone (https://github.com/Munyiwamwangi/Landing-Portfolio.git)
+*cd Portfolio_Landing
+*Open index.html from a browser (preferably chrome)
+###Technologies used
+I used HTML, CSS and a little bit of JavaScript
+###Known Buga
+No bugs. If any found, freely contact me at josseymunyi@gmail.com
+###Support and contact detals
+Tell +254 719828205
+email: josseymunyi@gmail.com
 ###link to live site on GitHub Pages
  link;  https://munyiwamwangi.github.io/Landing-Portfolio/
 ###copyright and license information
