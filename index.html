@@ -13,237 +13,373 @@
                 background-color: inherit;
             }
         }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+
+        .color-overlay {
+            width: 100%;
+            height: 100%;
+            background: black;
+            opacity: .6;
+            position: absolute;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 60px;
+            z-index: 7;
+        }
+
+        .btn {
+            font-family: 'Nunito', sans-serif;
+            font-size: 20px;
+            width: 240px;
+            height: 30px;
+            border-radius: 70px;
+            line-height: 60px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .containerser {
+            background: #000 url(https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80-9);
+            color: #fff;
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .color-overlay {
+            width: 100%;
+            height: 100%;
+            background: black;
+            opacity: .7;
+            position: absolute;
+        }
+
+        .words {
+          
+            font-size: 60px;
+            z-index: 1;
+            color: antiquewhite;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 950;
+            padding-top: 00px;
+        }
+        .headings{
+            z-index: 1;
+            padding-bottom: 900px;
+            
+        }
     </style>
     <meta charset="utf-8">
     <title>landing_portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 </head>
 <div container-fluid>
+
     <body>
-        <div class="container-fluid main" id="home">
-            <nav class="navbar navbar-dark navbar-collapse navbar-toggle navbar-inverse">
-                <ul style="float:right" class="nav navbar-toggle">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#works">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
+
+        <div class="containerser">
+           
             <div class="headings">
-                <h2>HELLO, MEET J.M.M</h2>
-                <h1><strong>FULL STACK DEVELOPER AND</strong>
-                    <br>
+                <div id="main" style="float: left; ">
+                    <span style=" font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                </div>
+                <div style="text-decoration: none;" id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+
+            <div class="color-overlay"></div>
+            <div class="words">
+                <h2 style="padding-left : 00px;   font-weight: 950;">HELLO, MEET J.M.M</h2>
+                <h1 style=" font-family: 'Montserrat', sans-serif; padding-left: 00px;   font-weight: 950;">FULL STACK DEVELOPER AND
+                 
                 </h1>
                 <h2>
+              
                     <br>
-                    <a href="https://www.linkedin.com/in/joe-munyi-644171a4" style="color:lightgreen;" target="_blank">Hire
+                    <a  href="https://www.linkedin.com/in/joe-munyi-644171a4" style="color:lightgreen; padding-left: 00px; text-decoration: none;"
+                      >Hire
                         Skill
-                        <br>and Experience
+                        and Experience
                     </a>
                 </h2>
             </div>
         </div>
-        <section>
-            <div class=" headers ">
-                <img src="./images/editpass.png" width="120px" alt="My Picture" class="img-fluid image2">
-                <h2 class="text-center" style="color:black" id="about">~About Me~</h2>
-            </div>
-        </section>
 
-        <section class="row">
-            <div class="col-md-3 col-lg-3 col-sm-4"></div>
-            <div class="col-md-6 col-lg-6, col-sm-6 ">
-                <div class="cola">
-                    <div class="">
-                        <h4 style="font-size:20px"> 
-                        </h4>
-                        <p>I'am a Kenyan full stack develloper and web developer, still studying but highly experienced already
-                            and involved in a number of development projects. I have 6 months of experence in the field and have
-                            developed a number of web applications.
-                            I am currently living in Kenya, tutoring and developing. You can read
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-4"></div>
-        </section>
-
-        <div>
-            <h3 style="color:lightgreen; text-align:center; font-size: 40px">-My Coding Life-</h3>
-            <img src="./images/compcode.jpeg" alt="My Code_Life" class="image4">
+        <div class="arrow" style=" padding-left: 840px;">
+            <img src="images/chevron (1).png">
         </div>
 
-        <div class="image3">
-            <p>
-                <a href="https://github.com/Munyiwamwangi?tab=repositories">
-                    <br>
-                    <strong style="color:green;">
-                        <br>
-                        <br> Check My Works
-                    </strong>
-                </a>
-            </p>
-        </div>
+</div>
+<section>
+    <div class=" headers ">
+        <img src="./images/editpass.png" width="120px" alt="My Picture" class="img-fluid image2">
+        <h2 class="text-center" style="color:black" id="about">~About Me~</h2>
+    </div>
+</section>
 
-        <div class="row" id="works">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>Cuisine Elmundo</h4>
-                    </div>
-                    <div class="card-body">
-                        <div card-text>This project is a prototype design of spanish cuisine
-                        </div>
-                        <img src="images/catering.png" alt="cuisine elmundo" width="350px" height="317px"
-                        class="center">
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://munyiwamwangi.github.io/catering/">
-                            <button class="btn-success; btn-block" name="button">View Project</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <p>All About Mangoes</p>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text">
-                            <p>This project is educative on mangoes nutritional value</p>
-                        </div>
-                        <img src="images/mangoesreload.png" alt="about mangoes" width="350px" height="300px"
-                        class="center">
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://munyiwamwangi.github.io/practice_mangoes/">
-                            <button class="btn-success; btn-block" name="button">View Project</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <p>Dury Hotel Menu</p>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text">
-                            <p>This project is a prototype design of a hotel menu</p>
-                        </div>
-                        <img src="images/durycafemenu.png" alt="about mangoes" width="350px" height="300px"
-                        class="center">
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://munyiwamwangi.github.io/Dury-Hotel-Menu/">
-                            <button class="btn-success; btn-block" name="button">View Project</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="image3">
-            <p>
-                <em style="font-style:oblique">I am proficient and outstanding in front-end and back-end web
-                    development.
-                    <br>
-                    My areas of specialty include the following
-                </em>
-                <a href="https://github.com/Munyiwamwangi?tab=repositories">
-                    <br>
-                    <strong style="color:green;">
-                        <br>
-                        <br> Proficiency and Expertise;
-                    </strong>
-                </a>
-            </p>
-        </div>
-
-        <div id="skills" target="_blank" class="skills">
-            <div class="gallery">
-                <img src="./images/css.jpg" alt="CSS" width="100px">
-                <div class="two">
-                    <p>CSS</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <img src="./images/js.png" width="110px" alt="JS">
-                <div class="two">
-                    <p>Java Script</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <img src="./images/html.png" width="110px" alt="HTML">
-                <div class="two">
-                    <p>HTML</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <img src="./images/python.png" width="110px" alt="PYTHON">
-                <div class="two">
-                    <p>Python</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <img src="./images/django.png" width="110px" alt="DJANGO">
-                <div class="two">
-                    <p>Django</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="contacts">
-            <img src="./images/callme.png" class="image5" width="100px" alt="Lets Talk">
-            <p style="text-align:center; font-size: 40px; font-style:oblique">Lets Talk Business
-            </p>
-        </div>
-
-        <footer style="background-color: lightgrey;">
-            <div class="call">
-                <p>Join Me
-                    <a href="https://www.linkedin.com/in/joe-munyi-644171a4" target="_blank">
-                    </p>
-                    <img src="./images/linkedin.png" target="_blank" alt="Linked In" width="40px">
-                </a>
-                <p>Follow US
-                    <a href="www.twitter.com">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a1Asf1sK4O5SVfF-9yfbe53gugTvhcRjUwMt84zy-RVqsCcHFQ"
-                        height="20px" target="_blank">
-                        <em>twitter</em>
-                    </a>
+<section class="row">
+    <div class="col-md-3 col-lg-3 col-sm-4"></div>
+    <div class="col-md-6 col-lg-6, col-sm-6 ">
+        <div class="cola">
+            <div class="">
+                <h4 style="font-size:20px">
+                </h4>
+                <p style="font-size: 15px;  font-family: 'Montserrat', sans-serif; font-weight: 500; ">I'am a
+                    Kenyan full stack develloper and web developer, still
+                    studying but highly
+                    experienced
+                    already
+                    and involved in a number of development projects. I have 6 months of experence in the
+                    field
+                    and have
+                    developed a number of web applications.
+                    I am currently living in Kenya, tutoring and developing. You can read
                 </p>
             </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-lg-3 col-sm-4"></div>
+</section>
 
-            <div class="last">
-            </p>
+<div>
+    <h3 style="color:lightgreen; text-align:center; font-size: 40px">-My Coding Life-</h3>
+    <img src="./images/compcode.jpeg" alt="My Code_Life" class="image4">
+</div>
+
+<div class="image3">
+    <p>
+        <a href="https://github.com/Munyiwamwangi?tab=repositories">
             <br>
-            <p>HOTLINE: (+254)716574803. OR</p>
-            <ul>
-                <li>email:amadaick@gmail.com</li>
-                <li>OR: josseymunyi@gmail.com</li>
-                <li>Slack Handle: Joe_munyi</li>
-            </ul>
+            <strong style="color:black; font-size: 39px;">
+                <br>
+                PROJECTS
+                <br>
+            </strong>
+        </a>
+    </p>
+</div>
+
+<div class="row" style="padding-left: 30px;" id="works">
+    <div class="col-md-4">
+        <div class="card"
+            style="width: 500px ; height: 550px; border-radius: 30px;  box-shadow: 0 10px 15px 0 rgb(0, 0, 0);padding-left: 30px; ">
+            <br>
+            <h4 style="font-family: 'Poppins', sans-serif; font-size:30px; text-align:center;">Cuisine Elmundo
+            </h4>
+
+            <div class="card-body">
+                <div card-text>This project is a prototype design of spanish cuisine
+                </div>
+                <img src="images/catering.png" alt="cuisine elmundo" width="350px" height="317px" class="center">
+            </div>
+            <div class="button" style="padding-bottom: 40px;padding-left:60px;">
+                <a class="btn btn-primary" style="padding-bottom: 30px;"
+                    href="https://munyiwamwangi.github.io/catering/">View project</a>
+            </div>
         </div>
-        <div class="copyright">
-            <p class="copy">&copy; Copyright (2019) All rights Reserved</p>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card"
+            style="width: 500px ; height: 550px; border-radius: 30px;  box-shadow: 0 10px 15px 0 rgb(0, 0, 0);padding-left: 30px;">
+            <br>
+            <h4 style="font-family: 'Poppins', sans-serif; font-size:30px; text-align:center;">All About Mangoes
+            </h4>
+
+            <div class="card-body">
+                <div class="card-text">
+                    <p>This project is educative on mangoes nutritional value</p>
+                </div>
+                <img src="images/mangoesreload.png" alt="about mangoes" width="350px" height="300px" class="center">
+            </div>
+            <div class="button" style="padding-bottom: 40px;padding-left:60px;">
+                <a class="btn btn-primary" style="padding-bottom: 30px;"
+                    href="https://munyiwamwangi.github.io/practice_mangoes/">View project</a>
+            </div>
         </div>
-    </footer>
+    </div>
+    <div class="col-md-4">
+        <div class="card"
+            style="width: 500px ; height: 550px; border-radius: 30px;  box-shadow: 0 10px 15px 0 rgb(0, 0, 0);padding-left: 30px;">
+            <br>
+            <h4 style="font-family: 'Poppins', sans-serif; font-size:30px; text-align:center;">Dury Hotel Menu
+            </h4>
+            <div class="card-body">
+                <div class="card-text">
+                    <p>This project is a prototype design of a hotel menu</p>
+                </div>
+                <img src="images/durycafemenu.png" alt="about mangoes" width="350px" height="300px" class="center">
+            </div>
+            <div class="button" style="padding-bottom: 40px;padding-left:90px;">
+                <a class="btn btn-primary" style="padding-bottom: 30px;"
+                    href="https://munyiwamwangi.github.io/Dury-Hotel-Menu/">View project</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="image3" style="text-align: center;">
+    <p>
+        <em style="font-style:oblique">I am proficient and outstanding in front-end and back-end web
+            development.
+            <br>
+            My areas of specialty include the following
+        </em>
+        <a href="https://github.com/Munyiwamwangi?tab=repositories">
+            <br>
+            <strong style="color:green;">
+                <br>
+                <br> Proficiency and Expertise;
+            </strong>
+        </a>
+    </p>
+</div>
+
+
+<div id="skills" style="padding-left: 170px;" target="_blank" class="skills">
+    <div class="gallery">
+        <img src="./images/css.jpg" alt="CSS" width="100px">
+        <div class="two">
+            <p>CSS</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="./images/js.png" width="110px" alt="JS">
+        <div class="two">
+            <p>Java Script</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="./images/html.png" width="110px" alt="HTML">
+        <div class="two">
+            <p>HTML</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="./images/python.png" width="110px" alt="PYTHON">
+        <div class="two">
+            <p>Python</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="./images/django.png" width="110px" alt="DJANGO">
+        <div class="two">
+            <p>Django</p>
+        </div>
+    </div>
+</div>
+
+<div id="contacts">
+    <img src="./images/callme.png" class="image5" width="100px" alt="Lets Talk">
+    <br>
+    <br>
+    <p style="text-align:center; font-size: 40px; font-style:oblique">Lets Talk Business
+    </p>
+</div>
+
+<footer style="background-color: lightgrey;">
+    <div class="call">
+        <p>Join Me
+            <a href="https://www.linkedin.com/in/joe-munyi-644171a4" target="_blank">
+        </p>
+        <img src="./images/linkedin.png" target="_blank" alt="Linked In" width="40px">
+        </a>
+        <p>Follow US
+            <a href="www.twitter.com">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a1Asf1sK4O5SVfF-9yfbe53gugTvhcRjUwMt84zy-RVqsCcHFQ"
+                    height="20px" target="_blank">
+                <em>twitter</em>
+            </a>
+        </p>
+    </div>
+
+    <div class="last">
+        </p>
+        <br>
+        <p>HOTLINE: (+254)716574803. OR</p>
+        <ul>
+            <li>email:amadaick@gmail.com</li>
+            <li>OR: josseymunyi@gmail.com</li>
+            <li>Slack Handle: Joe_munyi</li>
+        </ul>
+    </div>
+    <div class="copyright" style="text-align: center;">
+        <p class="copy">&copy; Copyright (2019) All rights Reserved</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
 </body>
 </div>
 <!-- scripts -->
@@ -253,6 +389,20 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
 
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+
+</script>
 
 </html>
