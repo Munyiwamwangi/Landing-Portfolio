@@ -1,36 +1,16 @@
 body{
   overflow-x: hidden;
 }
-nav li a {
-  padding: 50px;
-  color: lightgreen;
-  font-size: 23px;
-  text-decoration: none;
-}
 
-nav {
-  position: fixed;
-  background-color: inherit;
-  margin-bottom: 10%;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-nav li {
-  float: right;
-  font-family: 'Libre Baskerville', serif;
-}
 
 .headings{
-  padding-top: 5%;
+  
   text-align: center;
   color: white;
-  font-family: 'Libre Baskerville', serif;
+ 
 }
 
-a:hover {
-  color: green;
-}
+
 
 .main {
   padding-top: 4%;
@@ -96,7 +76,7 @@ a {
   text-align: center;
 }
 
-.image4 {
+.image4 { 
   padding-top: 3%;
   margin-left: 35%;
 }
