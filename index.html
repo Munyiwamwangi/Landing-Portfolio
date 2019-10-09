@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-color: inherit;
@@ -13,427 +12,296 @@
                 background-color: inherit;
             }
         }
-
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        #main {
-            transition: margin-left .5s;
-            padding: 16px;
-        }
-
         @media screen and (max-height: 450px) {
             .sidenav {
-                padding-top: 15px;
-            }
-
-            .sidenav a {
-                font-size: 18px;
+                padding-top: 7px;
             }
         }
-
-
-        .color-overlay {
-            width: 100%;
-            height: 100%;
-            background: black;
-            opacity: .6;
-            position: absolute;
-        }
-
-        h1 {
-            font-family: 'Pacifico', cursive;
-            font-size: 60px;
-            z-index: 7;
-        }
-
-        .btn {
-            font-family: 'Nunito', sans-serif;
-            font-size: 20px;
-            width: 240px;
-            height: 30px;
-            border-radius: 70px;
-            line-height: 60px;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-        }
-
-        .containerser {
-            background: #000 url(https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80-9);
-            color: #fff;
-            width: 100%;
-            height: 1000px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .color-overlay {
-            width: 100%;
-            height: 100%;
-            background: black;
-            opacity: .7;
-            position: absolute;
-        }
-
-        .words {
-          
-            font-size: 60px;
-            z-index: 1;
-            color: antiquewhite;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 950;
-            padding-top: 00px;
-        }
-        .headings{
-            z-index: 1;
-            padding-bottom: 900px;
-            
-        }
+    
     </style>
     <meta charset="utf-8">
     <title>landing_portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<div container-fluid>
-
-    <body>
-
-        <div class="containerser">
-           
-            <div class="headings">
-                <div id="main" style="float: left; ">
-                    <span style=" font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<body style="overflow-x: hidden" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<div id="portfoliohome" container-fluid site-wrap>
+        <div class="site-mobile-menu site-navbar-target">
+                <div class="site-mobile-menu-header">
+                  <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                  </div>
                 </div>
-                <div style="text-decoration: none;" id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
+                <div class="site-mobile-menu-body"></div>
+              </div>
+              <div class="site-navbar-wrap">
+                <div class="site-navbar site-navbar-target js-sticky-header">
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-6 col-md-4">
+                        <h1 class="my-0"><a href="#">Portfolio<span class="text-primary"></span> </a></h1>
+                      </div>
+                      <div class="col-6 col-md-8">
+                        <nav class="site-navigation text-right" role="navigation">
+                          <div class="container">
+                            <div class="d-inline-block d-lg-block ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black">
+                              <span class="icon-menu h3"></span> <span class="menu-text"></span>
+                            </a></div>
+                            <ul class="site-menu main-menu js-clone-nav d-lg-none" >
+                              <li><a href="#portfoliohome" class="nav-link">Portfolio</a></li>
+                              <li><a href="#about" class="nav-link">About</a></li>
+                              <li><a href="#projects" class="nav-link">Projects</a></li>
+                              <li><a href="#experience" class="nav-link">Experience</a></li>
+                              <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                            </ul>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
 
-            <div class="color-overlay"></div>
-            <div class="words">
-                <h2 style="padding-left : 00px;   font-weight: 950;">HELLO, MEET J.M.M</h2>
-                <h1 style=" font-family: 'Montserrat', sans-serif; padding-left: 00px;   font-weight: 950;">FULL STACK DEVELOPER AND
-                 
-                </h1>
-                <h2>
-              
-                    <br>
-                    <a  href="https://www.linkedin.com/in/joe-munyi-644171a4" style="color:lightgreen; padding-left: 00px; text-decoration: none;"
-                      >Hire
+              <!-- nav  -->
+
+              <div class="containerser">
+                <div>
+                    <h2 class="text-center" style="color: white; font-weight: 950;">HELLO, MEET JOE MUNYI</h2>
+                    <h1 class="text-center" style="color: white; font-family: 'Montserrat', sans-serif; padding-left: 00px;   font-weight: 950;">A FULL STACK DEVELOPER
+                    </h1>
+                    <h2 class="text-center">
+                        <br>
+                        <a  href="https://www.linkedin.com/in/joe-munyi-644171a4" style="color:lightgreen; padding-left: 00px; text-decoration: none;"
+                        >Hire
                         Skill
                         and Experience
                     </a>
                 </h2>
             </div>
         </div>
-
-        <div class="arrow" style=" padding-left: 840px;">
-            <img src="images/chevron (1).png">
-        </div>
-
-</div>
-<section>
-    <div class=" headers ">
-        <img src="./images/editpass.png" width="120px" alt="My Picture" class="img-fluid image2">
-        <h2 class="text-center" style="color:black" id="about">~About Me~</h2>
     </div>
-</section>
 
-<section class="row">
-    <div class="col-md-3 col-lg-3 col-sm-4"></div>
-    <div class="col-md-6 col-lg-6, col-sm-6 ">
-        <div class="cola">
+    <div id="about"></div>
+
+      <div  style="margin-top: 4%;" class="text=center">
+        <div class="section-title">
+          <span style="color:green; " class="sub-title mb-2 d-block text-center">About</span>
+        </div>
+      </div>
+    <section style="margin-top: 4%;" class="row mb-lg-4">
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+        <div class="col-md-4 col-lg-4 col-sm-4">
+                
+            <section>
+                <div class="">
+                    <img src="./images/editpass.png" width="120px" alt="My Picture" class="img-fluid roundimage">
+                </div>
+            </section>
+        </div>
+        <div class="col-md-3 col-lg-3, col-sm-3 ">
             <div class="">
-                <h4 style="font-size:20px">
-                </h4>
-                <p style="font-size: 15px;  font-family: 'Montserrat', sans-serif; font-weight: 500; ">I'am a
-                    Kenyan full stack develloper and web developer, still
-                    studying but highly
-                    experienced
-                    already
-                    and involved in a number of development projects. I have 6 months of experence in the
-                    field
-                    and have
-                    developed a number of web applications.
-                    I am currently living in Kenya, tutoring and developing. You can read
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3 col-lg-3 col-sm-4"></div>
-</section>
-
-<div>
-    <h3 style="color:lightgreen; text-align:center; font-size: 40px">-My Coding Life-</h3>
-    <img src="./images/compcode.jpeg" alt="My Code_Life" class="image4">
-</div>
-
-<div class="image3">
-    <p>
-        <a href="https://github.com/Munyiwamwangi?tab=repositories">
-            <br>
-            <strong style="color:black; font-size: 39px;">
-                <br>
-                PROJECTS
-                <br>
-            </strong>
-        </a>
-    </p>
-</div>
-
-<div class="row" style="padding-left: 30px;" id="works">
-    <div class="col-md-4">
-        <div class="card"
-            style="width: 500px ; height: 550px; border-radius: 30px;  box-shadow: 0 10px 15px 0 rgb(0, 0, 0);padding-left: 30px; ">
-            <br>
-            <h4 style="font-family: 'Poppins', sans-serif; font-size:30px; text-align:center;">Cuisine Elmundo
-            </h4>
-
-            <div class="card-body">
-                <div card-text>This project is a prototype design of spanish cuisine
+                <div class="">
+                    <h4 style="font-size:20px">
+                    </h4>
+                    <p style="font-size: 15px;  font-family: 'Montserrat', sans-serif; font-weight: 500; text-align: justify;">A 
+                        passionate <br> problem solver in the field of computer programming,
+                        striving for a  better understanding of 
+                        software infrastructure and the
+                        pristinely methodical procedures.
+                    </p>
                 </div>
-                <img src="images/catering.png" alt="cuisine elmundo" width="350px" height="317px" class="center">
-            </div>
-            <div class="button" style="padding-bottom: 40px;padding-left:60px;">
-                <a class="btn btn-primary" style="padding-bottom: 30px;"
-                    href="https://munyiwamwangi.github.io/catering/">View project</a>
             </div>
         </div>
-    </div>
+        <div class="col-md-3 col-lg-3, col-sm-3 "></div>
+    </section>
 
-    <div class="col-md-4">
-        <div class="card"
-            style="width: 500px ; height: 550px; border-radius: 30px;  box-shadow: 0 10px 15px 0 rgb(0, 0, 0);padding-left: 30px;">
-            <br>
-            <h4 style="font-family: 'Poppins', sans-serif; font-size:30px; text-align:center;">All About Mangoes
-            </h4>
+<!--START project section  -->
 
-            <div class="card-body">
-                <div class="card-text">
-                    <p>This project is educative on mangoes nutritional value</p>
+    <div style=" margin-top: 7%;" class=" site-section bg-light" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <span style=" margin-bottom: 4%; color:green; " class="sub-title mb-2 d-block text-center mb-4">My projects</span>
+            </div>
+          <div class="row">
+            <div class="col-lg-12 ml-auto">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                  <div class="service ">
+                        <h3 class="text-center" >Neignborhood Web App</h3>
+                    <span class=" display-4 text-primary mb-4"><img height="250px"; width="310px" src="images/neignborhood.png" alt="Neighborhood Image"> </span>
+                    <p> Allows easy location of hoods, and sharing between neighbors</p>
+                    <p><a style="color: green; text-align: center;" href="https://joeneiba.herokuapp.com/" class="text-center readmore">Visit site</a></p>
+                  </div>
                 </div>
-                <img src="images/mangoesreload.png" alt="about mangoes" width="350px" height="300px" class="center">
-            </div>
-            <div class="button" style="padding-bottom: 40px;padding-left:60px;">
-                <a class="btn btn-primary" style="padding-bottom: 30px;"
-                    href="https://munyiwamwangi.github.io/practice_mangoes/">View project</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card"
-            style="width: 500px ; height: 550px; border-radius: 30px;  box-shadow: 0 10px 15px 0 rgb(0, 0, 0);padding-left: 30px;">
-            <br>
-            <h4 style="font-family: 'Poppins', sans-serif; font-size:30px; text-align:center;">Dury Hotel Menu
-            </h4>
-            <div class="card-body">
-                <div class="card-text">
-                    <p>This project is a prototype design of a hotel menu</p>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="service">
+                      <h3 class="text-center" >Quotes App</h3>
+                      <span class=" display-4 text-primary mb-4"><img height="250px"; width="310px" src="images/quotesapp.png" alt="Quotes App Image"> </span>
+                      <p> Post a quote, highest voted quote is highighted as quote of the day</p>
+                      <p><a style="color: green;" href="https://munyiwamwangi.github.io/Quotes-App/" class="text-center readmore">Visit site</a></p>
+                    </div>
+              </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                  <div class="service">
+                    <h3 class="text-center" >Daily Story</h3>
+                    <span class=" display-4 text-primary mb-4"><img height="250px"; width="310px" src="images/newsfeed.png" alt="Daily Story Image"> </span>
+                    <p>Consumes a news API and displays the news, categorically</p>
+                    <p><a style="color: green;" href="https://joefeeds.herokuapp.com/" class="text-center readmore">Visit site</a></p>
+                  </div>
                 </div>
-                <img src="images/durycafemenu.png" alt="about mangoes" width="350px" height="300px" class="center">
+                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                  <div class="service">
+                    <h3 class="text-center" >Care Hub</h3>
+                    <span class=" display-4 text-primary mb-4"><img height="250px"; width="310px" src="images/carehub.png" alt="Care-Hub+ Image"> </span>
+                    <p>A platform for raising cancer awareness and access to doctors via bot</p>
+                    <p><a style="color: green;" href="https://carehub-kenya.herokuapp.com/" class="text-center readmore">Visit site</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                  <div class="service">
+                    <h3 class="text-center" >Instagram App</h3>
+                    <span class=" display-4 text-primary mb-4"><img height="250px"; width="310px" src="images/instagram.png" alt="Instagram Image"> </span>
+                    <p>This is a web vresion emulation of the Instagram social app</p>
+                    <p><a style="color: green;"  href="https://joeig.herokuapp.com/" class="text-center readmore">Visit site</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                  <div class="service">
+                    <h3 class="text-center" >Aaaw~adds</h3>
+                    <span class=" display-4 text-primary mb-4"><img height="250px"; width="310px" src="images/awwards.png" alt="Instagram Image"> </span>
+                    <p>This app allows users to picth their projects for others to review</p>
+                    <p><a style="color: green;" href="https://joe-awwards.herokuapp.com/" class="text-center readmore">Visit site</a></p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="button" style="padding-bottom: 40px;padding-left:90px;">
-                <a class="btn btn-primary" style="padding-bottom: 30px;"
-                    href="https://munyiwamwangi.github.io/Dury-Hotel-Menu/">View project</a>
-            </div>
+          </div>
         </div>
+      </div>
+       <!-- END ptoject-section -->
+    <div id="experience">
+        <p>
+            <a href="https://github.com/Munyiwamwangi?tab=repositories">
+                <div class="section-title">
+                  <span style="color:green;" class="text-center sub-title mb-2 d-block mb-4 mt-3">Expertise</span>
+              </div>
+          </a>
+            
+        </p>
     </div>
-</div>
-<div class="image3" style="text-align: center;">
-    <p>
-        <em style="font-style:oblique">I am proficient and outstanding in front-end and back-end web
-            development.
-            <br>
-            My areas of specialty include the following
-        </em>
-        <a href="https://github.com/Munyiwamwangi?tab=repositories">
-            <br>
-            <strong style="color:green;">
-                <br>
-                <br> Proficiency and Expertise;
-            </strong>
-        </a>
-    </p>
-</div>
-
-
 <div class="container">
     <div class="row">
-      <div class="col-lg-4" style="font-size: 15px;">
+    <div class="col-lg-4" style="font-size: 15px;">
         <div class="card animated fadeInLeft"
-          style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black; animation-delay: 3s">
-          <img style="width:30px; height: 60px; padding-left: 20px; " src="icons/menu (2).png">
-          <img style="width: 210px; height:170px; padding-left: 70px;padding-top: 30px; " src="icons/html5 (3).png">
-          <h2 style="color: white; text-align: center;">HTML</h2>
+        style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black; animation-delay: 3s">
+        <img style="width:30px; height: 60px; padding-left: 20px; " src="icons/menu (2).png">
+        <img style="width: 210px; height:170px; padding-left: 70px;padding-top: 30px; " src="icons/html5 (3).png">
+        <h2 style="color: white; text-align: center;">HTML</h2>
         </div>
-      </div>
-      <div class="col-lg-4" style="font-size: 15px;">
-        <div class="card animated fadeInLeft"
-          style="width: 300px ; height: 250px;  border-radius: 30px; box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black; animation-delay: 2s">
-          <img style="width:30px; height: 60px; padding-left: 20px; " src="icons/menu (4).png">
-          <img style="width: 210px; height:170px; padding-left: 70px;padding-top: 30px; " src="icons/css-3.png">
-          <h2 style="color: white; text-align: center;">CSS</h2>
-        </div>
-      </div>
-      <div class="col-lg-4" style="font-size: 15px;">
-        <div class="card animated fadeInLeft"
-          style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black;animation-delay: 1s">
-          <img style="width:30px; height: 60px; padding-left: 20px; " src="icons/menu (1).png">
-          <img style="width: 300px; height:170px; padding-left: 40px;padding-top: 30px; "
-            src="icons/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png">
-          <h2 style="color: white; text-align: center;">JAVASCRIPT</h2>
-        </div>
-      </div>
     </div>
-    <br>
-    <br>
+    <div class="col-lg-4" style="font-size: 15px;">
+        <div class="card animated fadeInLeft"
+        style="width: 300px ; height: 250px;  border-radius: 30px; box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black; animation-delay: 2s">
+        <img style="width:30px; height: 60px; padding-left: 20px; " src="icons/menu (4).png">
+        <img style="width: 210px; height:170px; padding-left: 70px;padding-top: 30px; " src="icons/css-3.png">
+        <h2 style="color: white; text-align: center;">CSS</h2>
+        </div>
+    </div>
+    <div class="col-lg-4" style="font-size: 15px;">
+        <div class="card animated fadeInLeft"
+        style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black;animation-delay: 1s">
+        <img style="width:30px; height: 60px; padding-left: 20px; " src="icons/menu (1).png">
+        <img style="width: 300px; height:170px; padding-left: 40px;padding-top: 30px; "
+            src="icons/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png">
+        <h2 style="color: white; text-align: center;">JAVASCRIPT</h2>
+        </div>
+    </div>
+    </div>
     <br>
     <br>
     <div class="row">
-      <div class="col-lg-4" style="font-size: 15px;">
-        <div class="card animated fadeInLeft"
-          style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black;animation-delay: 4s">
-          <img style="width:30px; height: 60px; padding-left: 20px; " src="icons/menu (1).png">
-          <img style="width: 200px; height:170px; padding-left: 40px;padding-top: 30px; "
+    <div class="col-lg-4" style="font-size: 15px;">
+         
+            </html>   <div class="card animated fadeInLeft"
+        style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black;animation-delay: 4s">
+        <img style="width:30px; height: 60px; padding-left: 20px; " src="icons/menu (1).png">
+        <img style="width: 200px; height:170px; padding-left: 40px;padding-top: 30px; "
             src="icons/1200px-Postgresql_elephant.svg.png">
-          <h2 style="color: white; text-align: center;">POSTGRES</h2>
+        <h2 style="color: white; text-align: center;">POSTGRES</h2>
         </div>
-      </div>
-      <div class="col-lg-4" style="font-size: 15px;">
+    </div>
+    <div class="col-lg-4" style="font-size: 15px;">
         <div class="card animated fadeInLeft"
-          style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black; animation-delay: 5s">
-          <img style="width:40px; height: 40px; padding-left: 20px; " src="icons/menu (2).png">
-          <img style="height: 210px; width: 250px; padding-left: 30px;"
+        style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black; animation-delay: 5s">
+        <img style="width:40px; height: 40px; padding-left: 20px; " src="icons/menu (2).png">
+        <img style="height: 210px; width: 250px; padding-left: 30px;"
             src="icons/104-1044449_python-logo-clipart-drawing-flask-python-hd-png.png">
-          <h2 style="color: white; text-align: center;">FLASK</h2>
+        <h2 style="color: white; text-align: center;">FLASK</h2>
         </div>
-      </div>
-      <div class="col-lg-4" style="font-size: 15px;">
+    </div>
+    <div class="col-lg-4" style="font-size: 15px;">
         <div class="card animated fadeInLeft"
-          style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black; animation-delay: 6s">
-          <img style="width:40px; height: 40px; padding-left: 20px; " src="icons/menu (2).png">
-          <img style=" width: 250px; height: 200px; padding-left: 50px;" src="icons/django-icon-0.jpg">
-          <h2 style="color: white; text-align: center;">DJANGO</h2>
+        style="width: 300px ; height: 250px; border-radius: 30px;  box-shadow: 0 20px 15px 0 rgb(0, 0, 0);padding-bottom: 90px; background-color:black; animation-delay: 6s">
+        <img style="width:40px; height: 40px; padding-left: 20px; " src="icons/menu (2).png">
+        <img style=" width: 250px; height: 200px; padding-left: 50px;" src="icons/django-icon-0.jpg">
+        <h2 style="color: white; text-align: center;">DJANGO</h2>
         </div>
-      </div>
+    </div>
+    
 
     </div>
-  </div>
+</div>
+</div>
+<div id="contacts" style="margin-top: 8%;" class="section-title">
+        <span style="color:green; " class="sub-title mb-4 d-block text-center">Contacts</span>
 </div>
 
-<div id="contacts">
-    <img src="./images/callme.png" class="image5" width="100px" alt="Lets Talk">
-    <br>
-    <br>
-    <p style="text-align:center; font-size: 40px; font-style:oblique">Lets Talk Business
-    </p>
+
+<footer>
+    <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+                <div class="mb-4 flex-center row">
+                        <a style="color: white; padding-left: 1%;" href="josseymunyi@gmail.com"><i class="fa fa-google-plus fa-4x icon-3d"></i></a>
+                        <a style="color: white; padding-left: 1%;" href=""><i class="v1 fa fa-github fa-4x icon-3d"></i></a>
+                        <a style="color: white; padding-left: 1%;" href=""><i class="v1 fa fa-twitter fa-4x icon-3d"></i></a>
+                        <a style="color: white; padding-left: 1%;" href=""><i class="v1 fa fa-facebook fa-4x icon-3d"></i></a>
+                        <a style="color: white; padding-left: 1%;" href=""><i class="v1 fa fa-instagram fa-4x icon-3d"></i></a>
+                </div>
+            Copyright@
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            Munyi Mwangi
+        </p>
+    </div>
 </div>
-
-<footer style="background-color: lightgrey;">
-    <div class="call">
-        <p>Join Me
-            <a href="https://www.linkedin.com/in/joe-munyi-644171a4" target="_blank">
-        </p>
-        <img src="images/linkedin.png"  alt="Linked In" width="40px">
-        </a>
-        <p>
-            <a href="www.twitter.com">
-                <img src="images/twitter.png"
-                    height="20px" target="_blank">
-                <em>twitter</em>
-            </a>
-        </p>
-    </div>
-
-    <div class="last">
-        </p>
-        <br>
-        <p>HOTLINE: (+254)716574803. OR</p>
-        <ul>
-            <li>email:amadaick@gmail.com</li>
-            <li>OR: josseymunyi@gmail.com</li>
-            <li>Slack Handle: Joe_munyi</li>
-        </ul>
-    </div>
-    <div class="copyright" style="text-align: center;">
-        <p class="copy">&copy; Copyright (2019) All rights Reserved</p>
-    </div>
 </footer>
 
-
-
-
-
-
-
-
 </body>
-</div>
-<!-- scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script>
-
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        document.body.style.backgroundColor = "white";
-    }
-
-</script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
 
 </html>
